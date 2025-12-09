@@ -5,7 +5,7 @@
 - Pedro Henrique Silva de Araujo
 
 🏫 ETEC Centro Paula Souza
-Unidade: [Nome da sua unidade - ex: ETEC de Taboão da Serra]
+Unidade: ETEC de Taboão da Serra]
 
 📚 Componente Curricular
 - Técnicas de Programação de Algoritmos** (PA)
@@ -37,4 +37,4 @@ Instalação e Execução
 1. Pré-requisitos: .NET Framework 4.0 ou superior
 2. Clonar o repositório:
    ```bash
-   git clone https://github.com/[seu-usuario]/EducaQuest.git
+   git clone https://lucca02.github.io/EducaQuest.git
