@@ -1,0 +1,16 @@
+C:\Users\Amanda\OneDrive - Etec Centro Paula Souza\Documentos\EducaQuest\EducaQuest\bin\Debug\EducaQuest.exe
+C:\Users\Amanda\OneDrive - Etec Centro Paula Souza\Documentos\EducaQuest\EducaQuest\bin\Debug\EducaQuest.pdb
+C:\Users\Amanda\OneDrive - Etec Centro Paula Souza\Documentos\EducaQuest\EducaQuest\obj\Debug\EducaQuest.csprojResolveAssemblyReference.cache
+C:\Users\Amanda\OneDrive - Etec Centro Paula Souza\Documentos\EducaQuest\EducaQuest\obj\Debug\EducaQuest.AlterarSenhaForm.resources
+C:\Users\Amanda\OneDrive - Etec Centro Paula Souza\Documentos\EducaQuest\EducaQuest\obj\Debug\EducaQuest.CadastroForm.resources
+C:\Users\Amanda\OneDrive - Etec Centro Paula Souza\Documentos\EducaQuest\EducaQuest\obj\Debug\EducaQuest.LoginForm.resources
+C:\Users\Amanda\OneDrive - Etec Centro Paula Souza\Documentos\EducaQuest\EducaQuest\obj\Debug\EducaQuest.MainForm.resources
+C:\Users\Amanda\OneDrive - Etec Centro Paula Souza\Documentos\EducaQuest\EducaQuest\obj\Debug\EducaQuest.ModoEstudoForm.resources
+C:\Users\Amanda\OneDrive - Etec Centro Paula Souza\Documentos\EducaQuest\EducaQuest\obj\Debug\EducaQuest.PerfilForm.resources
+C:\Users\Amanda\OneDrive - Etec Centro Paula Souza\Documentos\EducaQuest\EducaQuest\obj\Debug\EducaQuest.QuestaoDiariaForm.resources
+C:\Users\Amanda\OneDrive - Etec Centro Paula Souza\Documentos\EducaQuest\EducaQuest\obj\Debug\EducaQuest.QuestionarioForm.resources
+C:\Users\Amanda\OneDrive - Etec Centro Paula Souza\Documentos\EducaQuest\EducaQuest\obj\Debug\EducaQuest.Splash.resources
+C:\Users\Amanda\OneDrive - Etec Centro Paula Souza\Documentos\EducaQuest\EducaQuest\obj\Debug\EducaQuest.csproj.GenerateResource.Cache
+C:\Users\Amanda\OneDrive - Etec Centro Paula Souza\Documentos\EducaQuest\EducaQuest\obj\Debug\EducaQuest.exe
+C:\Users\Amanda\OneDrive - Etec Centro Paula Souza\Documentos\EducaQuest\EducaQuest\obj\Debug\EducaQuest.pdb
+C:\Users\Amanda\OneDrive - Etec Centro Paula Souza\Documentos\EducaQuest\EducaQuest\obj\Debug\EducaQuest.RecompensasForm.resources

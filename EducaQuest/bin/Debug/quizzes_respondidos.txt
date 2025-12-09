@@ -1,0 +1,7 @@
+lucca;matematica;facil;08/12/2025;50
+Guilherme;matematica;facil;08/12/2025;50
+Guilherme;portugues;facil;08/12/2025;40
+Guilherme;ciencias;facil;08/12/2025;50
+Guilherme;matematica;extra_hard;08/12/2025;50
+Guilherme;portugues;extra_hard;08/12/2025;50
+Guilherme;ciencias;extra_hard;08/12/2025;50
