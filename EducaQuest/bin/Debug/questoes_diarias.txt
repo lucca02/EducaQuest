@@ -1,0 +1,7 @@
+04/12/2025;matematica;Qual o resultado de (8 + 3) × 2?;16;22;19;20;24;B;20
+05/12/2025;portugues;Qual o plural de "cidadão"?;cidadãos;cidadões;cidadães;cidadãoes;cidadãozes;A;20
+06/12/2025;ciencias;Qual o planeta mais próximo do Sol?;Vênus;Marte;Mercúrio;Terra;Júpiter;C;20
+07/12/2025;ciencias;Em um experimento, uma planta foi colocada em um recipiente transparente com água e exposta à luz solar. Após algum tempo, observaram-se pequenas bolhas se formando nas folhas e subindo até a superfície da água. Essas bolhas são formadas principalmente por:;Dióxido de carbono (CO₂), liberado durante a fotossíntese.;Oxigênio (O₂), produzido como resultado da fotossíntese.;Vapor de água (H₂O), resultado da transpiração da planta.;Nitrogênio (N₂), absorvido do ar pelas raízes da planta.;Oxônio (O₃), formado a partir do oxigênio presente na água.;B;25
+08/12/2025;matematica;Um reservatório tem capacidade de 2.000 litros e está inicialmente cheio. Um cano enche o reservatório com 50 litros por minuto, enquanto outro cano retira 30 litros por minuto. Após 10 minutos, qual será o volume de água no reservatório?;1800 litros;2100 litros;2200 litros;2000 litros;2150 litros;C;30
+09/12/2025;portugues;Qual figura de linguagem predomina no trecho: 'As horas são pérolas que escorrem entre os dedos'?;Comparação;Metáfora;Personificação;Hipérbole;Antítese;B;25
+10/12/2025;ciencias;Qual organela é responsável pela respiração celular?;Núcleo;Mitocôndria;Cloroplasto;Ribossomo;Complexo de Golgi;B;30

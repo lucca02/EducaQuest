@@ -1,0 +1,7 @@
+lucca;08/12/2025;True;30
+lucca;07/12/2025;True;25
+Guilherme;08/12/2025;True;30
+Guilherme;07/12/2025;True;25
+Guilherme;06/12/2025;True;20
+Guilherme;05/12/2025;True;20
+Guilherme;04/12/2025;True;20

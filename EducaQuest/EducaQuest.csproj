@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{4E987EB8-462D-4FCB-9C6C-A01AF9CEFD29}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>EducaQuest</RootNamespace>
+    <AssemblyName>EducaQuest</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AlterarSenhaForm.cs" />
+    <Compile Include="AlterarSenhaForm.Designer.cs">
+      <DependentUpon>AlterarSenhaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CadastroForm.cs" />
+    <Compile Include="CadastroForm.Designer.cs">
+      <DependentUpon>CadastroForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.cs" />
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs" />
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModoEstudoForm.cs" />
+    <Compile Include="ModoEstudoForm.Designer.cs">
+      <DependentUpon>ModoEstudoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PerfilForm.cs" />
+    <Compile Include="PerfilForm.Designer.cs">
+      <DependentUpon>PerfilForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QuestaoDiariaForm.cs" />
+    <Compile Include="QuestaoDiariaForm.Designer.cs">
+      <DependentUpon>QuestaoDiariaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuestionarioForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuestionarioForm.Designer.cs">
+      <DependentUpon>QuestionarioForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RecompensasForm.cs" />
+    <Compile Include="RecompensasForm.Designer.cs">
+      <DependentUpon>RecompensasForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Splash.cs" />
+    <Compile Include="Splash.Designer.cs">
+      <DependentUpon>Splash.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AlterarSenhaForm.resx">
+      <DependentUpon>AlterarSenhaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CadastroForm.resx">
+      <DependentUpon>CadastroForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModoEstudoForm.resx">
+      <DependentUpon>ModoEstudoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PerfilForm.resx">
+      <DependentUpon>PerfilForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuestaoDiariaForm.resx">
+      <DependentUpon>QuestaoDiariaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuestionarioForm.resx">
+      <DependentUpon>QuestionarioForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RecompensasForm.resx">
+      <DependentUpon>RecompensasForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Splash.resx">
+      <DependentUpon>Splash.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
