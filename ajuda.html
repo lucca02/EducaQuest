@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajuda - EducaQuest</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Estilos específicos para ajuda.html */
+        .hero-section {
+            min-height: 70vh;
+            padding: 60px 20px;
+        }
+        
+        .faq-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-bottom: 40px;
+        }
+        
+        .faq-item {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(58, 123, 213, 0.15);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .faq-item:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 30px rgba(58, 123, 213, 0.2);
+        }
+        
+        .faq-question {
+            padding: 25px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            cursor: pointer;
+            background: linear-gradient(135deg, #f8faff, #e8f1ff);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .faq-question:hover {
+            background: linear-gradient(135deg, #e8f1ff, #d8e4ff);
+        }
+        
+        .faq-question h3 {
+            flex: 1;
+            margin: 0;
+            color: #2C3E50;
+            font-size: 1.2rem;
+        }
+        
+        .faq-question i:first-child {
+            color: #3A7BD5;
+            font-size: 1.2rem;
+        }
+        
+        .faq-question i:last-child {
+            color: #6C757D;
+            transition: transform 0.3s;
+        }
+        
+        .faq-item.active .faq-question i:last-child {
+            transform: rotate(180deg);
+        }
+        
+        .faq-answer {
+            padding: 0 25px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease, padding 0.3s ease;
+        }
+        
+        .faq-item.active .faq-answer {
+            padding: 0 25px 25px 25px;
+            max-height: 500px;
+        }
+        
+        .faq-answer p {
+            color: #6C757D;
+            line-height: 1.6;
+        }
+        
+        /* Tutorial Steps */
+        .tutorial-steps {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+        
+        .step {
+            display: flex;
+            gap: 25px;
+            align-items: flex-start;
+        }
+        
+        .step-number {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, #3A7BD5, #00D2FF);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+        
+        .step-content h3 {
+            color: #2C3E50;
+            margin-bottom: 10px;
+            font-size: 1.3rem;
+        }
+        
+        .step-content p {
+            color: #6C757D;
+        }
+        
+        /* Troubleshooting */
+        .troubleshooting-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        
+        .trouble-item {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 15px;
+            border-left: 5px solid #3A7BD5;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .trouble-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(58, 123, 213, 0.15);
+        }
+        
+        .trouble-icon {
+            font-size: 2rem;
+            color: #3A7BD5;
+            margin-bottom: 15px;
+        }
+        
+        .trouble-content h3 {
+            color: #2C3E50;
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+        
+        .trouble-content p {
+            color: #6C757D;
+            font-size: 0.95rem;
+        }
+        
+        .help-note {
+            background: linear-gradient(135deg, rgba(58, 123, 213, 0.1), rgba(0, 210, 255, 0.1));
+            padding: 30px;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            gap: 25px;
+            border: 2px solid rgba(58, 123, 213, 0.2);
+        }
+        
+        .help-note i {
+            font-size: 3rem;
+            color: #3A7BD5;
+        }
+        
+        .help-note h4 {
+            color: #2C3E50;
+            margin-bottom: 10px;
+            font-size: 1.3rem;
+        }
+        
+        .help-note p {
+            color: #6C757D;
+        }
+        
+        .text-center {
+            text-align: center;
+        }
+        
+        .quick-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+        
+        .quick-link {
+            background: linear-gradient(135deg, #3A7BD5, #295FA6);
+            color: white;
+            padding: 12px 25px;
+            border-radius: 50px;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            font-weight: 500;
+        }
+        
+        .quick-link:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(58, 123, 213, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Hero Section -->
+        <header class="hero-section">
+            <div class="hero-content">
+                <div class="logo-animation">
+                    <i class="fas fa-graduation-cap"></i>
+                    <div class="pulse-ring"></div>
+                    <div class="pulse-ring delay-1"></div>
+                </div>
+                <h1 class="title">Central de Ajuda</h1>
+                <p class="subtitle">Encontre respostas para suas dúvidas sobre o EducaQuest</p>
+                <div class="tags">
+                    <span class="tag">FAQ</span>
+                    <span class="tag">Tutoriais</span>
+                    <span class="tag">Suporte</span>
+                </div>
+                
+                <div class="quick-links">
+                    <a href="#faq" class="quick-link">
+                        <i class="fas fa-question-circle"></i> Perguntas Frequentes
+                    </a>
+                    <a href="#tutorial" class="quick-link">
+                        <i class="fas fa-graduation-cap"></i> Guia Rápido
+                    </a>
+                    <a href="#troubleshooting" class="quick-link">
+                        <i class="fas fa-tools"></i> Solução de Problemas
+                    </a>
+                </div>
+            </div>
+            <div class="wave-divider">
+                <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"></path>
+                </svg>
+            </div>
+        </header>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="section fade-in">
+            <div class="section-header">
+                <h2><i class="fas fa-question-circle"></i> Perguntas Frequentes</h2>
+                <div class="underline"></div>
+            </div>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <i class="fas fa-question"></i>
+                        <h3>O que é o EducaQuest?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>O EducaQuest é uma plataforma educacional gamificada desenvolvida para auxiliar estudantes na preparação para o Provão Paulista, com foco nas disciplinas de Matemática, Português e Ciências. O sistema transforma o estudo em uma experiência divertida e motivadora.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <i class="fas fa-user-plus"></i>
+                        <h3>Como me cadastrar na plataforma?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Na tela inicial do aplicativo EducaQuest, clique em "Cadastrar" e preencha os dados solicitados: nome completo, email e senha. Após o cadastro, você pode fazer login normalmente e começar a usar todas as funcionalidades.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <i class="fas fa-gamepad"></i>
+                        <h3>Como funciona o sistema de gamificação?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>O sistema utiliza XP (pontos de experiência), níveis e moedas virtuais. Você ganha XP ao responder quizzes corretamente, desbloqueia novos níveis conforme progride e pode acompanhar seu progresso na página de estatísticas. Quanto mais você estuda, mais recompensas recebe!</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <i class="fas fa-sync-alt"></i>
+                        <h3>Como funciona o streak diário?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>O streak é uma sequência de dias consecutivos em que você acessa a plataforma e responde pelo menos um quiz. Quanto maior seu streak, mais bônus de XP você ganha! O streak reseta se você perder um dia, então mantenha a consistência nos estudos.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <i class="fas fa-book"></i>
+                        <h3>Posso escolher as disciplinas para estudar?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sim! Na seção "Modo de Estudo", você pode selecionar entre Matemática, Português e Ciências, além de escolher o nível de dificuldade (Fácil, Médio ou Difícil). Cada disciplina possui questões específicas do Provão Paulista.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <i class="fas fa-chart-line"></i>
+                        <h3>Onde vejo minhas estatísticas?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Na página principal, após o login, clique em "Estatísticas" para visualizar seu desempenho detalhado por disciplina, progresso geral, histórico de quizzes, streak atual e conquistas desbloqueadas.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <i class="fas fa-lock"></i>
+                        <h3>Meus dados estão seguros?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sim! Todas as senhas são criptografadas usando técnicas de segurança padrão da indústria. Os dados são armazenados localmente em seu computador e não são compartilhados com terceiros.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tutorial Section -->
+        <section id="tutorial" class="section fade-in">
+            <div class="section-header">
+                <h2><i class="fas fa-graduation-cap"></i> Guia Rápido</h2>
+                <div class="underline"></div>
+            </div>
+            
+            <div class="content-card">
+                <div class="tutorial-steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h3>Cadastro e Login</h3>
+                            <p>Crie sua conta com email e senha para começar a usar todas as funcionalidades. Faça login sempre que quiser acessar seu progresso.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h3>Quiz Diário</h3>
+                            <p>Responda o quiz do dia para ganhar XP e manter seu streak ativo. As questões são atualizadas diariamente com base no conteúdo do Provão Paulista.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h3>Modo de Estudo</h3>
+                            <p>Escolha uma disciplina e nível de dificuldade para praticar questões específicas. Use este modo para focar em suas áreas de dificuldade.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h3>Acompanhe seu Progresso</h3>
+                            <p>Verifique suas estatísticas regularmente para ver sua evolução, identificar pontos de melhoria e acompanhar suas conquistas.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Troubleshooting -->
+        <section id="troubleshooting" class="section fade-in">
+            <div class="section-header">
+                <h2><i class="fas fa-tools"></i> Solução de Problemas</h2>
+                <div class="underline"></div>
+            </div>
+            
+            <div class="content-card">
+                <div class="troubleshooting-grid">
+                    <div class="trouble-item">
+                        <div class="trouble-icon">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                        <div class="trouble-content">
+                            <h3>Esqueci minha senha</h3>
+                            <p>Entre em contato com os desenvolvedores através da página de Contato para redefinir sua senha. Forneça seu email cadastrado para verificação.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="trouble-item">
+                        <div class="trouble-icon">
+                            <i class="fas fa-exclamation-triangle"></i>
+                        </div>
+                        <div class="trouble-content">
+                            <h3>Erro ao carregar quizzes</h3>
+                            <p>Verifique sua conexão com a internet (caso necessário). Se o problema persistir, reinicie o aplicativo ou aguarde alguns minutos e tente novamente.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="trouble-item">
+                        <div class="trouble-icon">
+                            <i class="fas fa-user-times"></i>
+                        </div>
+                        <div class="trouble-content">
+                            <h3>Problemas com login</h3>
+                            <p>Certifique-se de que está usando o email correto. Caso necessário, solicite ajuda através do email de contato: [digite seu email aqui]</p>
+                        </div>
+                    </div>
+                    
+                    <div class="trouble-item">
+                        <div class="trouble-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <div class="trouble-content">
+                            <h3>Progresso não está salvando</h3>
+                            <p>Certifique-se de que o aplicativo tenha permissões de escrita no sistema. Feche e abra o aplicativo para forçar um novo salvamento.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="help-note">
+                    <i class="fas fa-life-ring"></i>
+                    <div>
+                        <h4>Precisa de mais ajuda?</h4>
+                        <p>Entre em contato conosco através da página de Contato ou envie um email para [digite seu email aqui]. Nossa equipe responderá o mais rápido possível para ajudá-lo com qualquer dúvida ou problema técnico!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>EducaQuest</span>
+                </div>
+                <p class="footer-text">© 2023 EducaQuest - Projeto Acadêmico do Centro Paula Souza</p>
+                <div class="footer-links">
+                    <a href="sobre.html" class="footer-link">
+                        <i class="fas fa-home"></i> Sobre
+                    </a>
+                    <span class="divider">|</span>
+                    <button class="footer-link" onclick="window.print()">
+                        <i class="fas fa-print"></i> Imprimir
+                    </button>
+                    <span class="divider">|</span>
+                    <button class="footer-link" onclick="window.close()">
+                        <i class="fas fa-times"></i> Fechar
+                    </button>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // Scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach((section) => {
+            observer.observe(section);
+        });
+
+        // FAQ Accordion
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const item = question.parentElement;
+                const isActive = item.classList.contains('active');
+                
+                // Fechar todos os itens
+                document.querySelectorAll('.faq-item').forEach(otherItem => {
+                    otherItem.classList.remove('active');
+                });
+                
+                // Abrir item clicado se não estava ativo
+                if (!isActive) {
+                    item.classList.add('active');
+                }
+            });
+        });
+
+        // Smooth scroll para links rápidos
+        document.querySelectorAll('.quick-link').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 100,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Scroll to top when clicking logo
+        document.querySelector('.logo-animation').addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Auto-open first FAQ item
+        document.querySelector('.faq-item').classList.add('active');
+    </script>
+</body>
+</html>

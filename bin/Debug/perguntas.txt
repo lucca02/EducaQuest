@@ -1,0 +1,57 @@
+matematica;facil;Qual o resultado de 15% de 200?;15;20;25;30;35;D
+matematica;facil;Se um triângulo tem lados 3cm, 4cm e 5cm, ele é:;Equilátero;Isósceles;Escaleno;Retângulo;Obtusângulo;D
+matematica;facil;O MMC entre 8 e 12 é:;12;16;24;32;48;C
+matematica;facil;Um produto custava R$80 e teve aumento de 25%. Seu novo preço é:;R$85;R$90;R$100;R$105;R$110;C
+matematica;facil;Qual fração é equivalente a 0,75?;1/4;2/3;3/4;4/5;5/6;C
+
+matematica;medio;Resolva a equação: 2x + 5 = 17;x=4;x=5;x=6;x=7;x=8;C
+matematica;medio;A área de um círculo com raio 5cm é aproximadamente:;15,7 cm²;31,4 cm²;78,5 cm²;157 cm²;314 cm²;C
+matematica;medio;Qual é o valor de x na proporção 3/4 = x/20?;10;12;15;18;20;C
+matematica;medio;Um capital de R$1000 aplicado a 2% ao mês renderá em 3 meses:;R$20;R$40;R$60;R$61,21;R$63,24;D
+matematica;medio;A soma dos ângulos internos de um pentágono é:;360°;450°;540°;630°;720°;C
+
+matematica;dificil;Se log₂(x) = 5, então x é igual a:;10;16;25;32;64;D
+matematica;dificil;A derivada de f(x) = 3x³ - 2x² + 5x - 1 é:;9x²-4x+5;6x²-4x+5;9x²-2x+5;6x²-2x+5;9x²-4x+1;A
+matematica;dificil;Resolva o sistema: x+y=10, x-y=4;x=5,y=5;x=6,y=4;x=7,y=3;x=8,y=2;x=9,y=1;C
+matematica;dificil;Uma progressão aritmética tem a₁=3 e razão=4. O 10º termo é:;27;31;35;39;43;D
+matematica;dificil;A probabilidade de sair número primo ao lançar um dado é:;1/6;1/3;1/2;2/3;5/6;C
+
+portugues;facil;Sinônimo de "alegre":;Triste;Contento;Bravo;Calmo;Doente;B
+portugues;facil;Qual palavra está escrita corretamente?;Excessão;Exceção;Excessão;Excessão;Exceção;B
+portugues;facil;Antônimo de "generoso":;Amigável;Egoísta;Humilde;Valente;Sábio;B
+portugues;facil;"Casa" é um:;Verbo;Adjetivo;Substantivo;Advérbio;Preposição;C
+portugues;facil;Complete: Eu ____ ao cinema ontem.;vou;fui;irei;ia;vejo;B
+
+portugues;medio;Figura de linguagem em "O tempo é ouro":;Comparação;Metáfora;Personificação;Hipérbole;Ironia;B
+portugues;medio;Classe da palavra "muito" em "Estou muito feliz":;Substantivo;Adjetivo;Advérbio;Pronome;Conjunção;C
+portugues;medio;Qual frase está na voz passiva?;O aluno fez a prova;A prova foi feita pelo aluno;O professor corrigiu;Todos estudaram;Ele lerá o livro;B
+portugues;medio;Regência correta: "Aspiro ____ uma carreira melhor.";a;de;por;para;com;A
+portugues;medio;Concordância correta: "____ alunos estudaram.";Os;As;O;A;Um;A
+
+portugues;dificil;Figura em "As estrelas piscavam no céu":;Metonímia;Catacrese;Personificação;Antítese;Pleonasmo;C
+portugues;dificil;Função da linguagem em "Fogo!":;Emotiva;Conativa;Fática;Poética;Metalinguística;B
+portugues;dificil;Período composto por subordinação:;Estudei e passei;Quando cheguei, todos dormiam;Ele canta, dança e atua;Comprei frutas e verduras;Trabalho ou estudo;B
+portugues;dificil;Estrutura "se eu soubesse, teria ido" expressa:;Fato;Dúvida;Desejo;Condição;Ordem;D
+portugues;dificil;Figura em "Farei isso nas caldas":;Eufemismo;Ironia;Hipérbole;Prosopopeia;Metonímia;E
+
+ciencias;facil;Planeta conhecido como "planeta vermelho":;Vênus;Marte;Júpiter;Saturno;Urano;B
+ciencias;facil;Gás essencial para a respiração humana:;Hidrogênio;Oxigênio;Nitrogênio;Carbono;Hélio;B
+ciencias;facil;Órgão responsável pela circulação sanguínea:;Cérebro;Pulmão;Coração;Fígado;Rim;C
+ciencias;facil;Processo das plantas para produzir alimento:;Digestão;Respiração;Fotossíntese;Transpiração;Germinação;C
+ciencias;facil;Estados físicos da matéria:;Gasoso, Líquido, Pastoso;Sólido, Pastoso, Gasoso;Sólido, Líquido, Gasoso;Líquido, Gasoso, Plasma;Sólido, Líquido, Plasma;C
+
+ciencias;medio;Fórmula química da água:;HO;H2O;H3O;HO2;H2O2;B
+ciencias;medio;Lei da Física: "Todo corpo permanece em repouso ou MRU...";Lei da Gravidade;Lei da Ação e Reação;Lei da Inércia;Lei da Força;Lei da Energia;C
+ciencias;medio;Sistema digestório NÃO inclui:;Estômago;Intestino;Fígado;Rim;Coração;E
+ciencias;medio;Recurso natural não renovável:;Energia solar;Vento;Petróleo;Água;Biomassa;C
+ciencias;medio;Camada da Terra onde ocorre a vida:;Núcleo;Manto;Crosta;Hidrosfera;Biosfera;E
+
+ciencias;dificil;Processo de divisão celular para gametas:;Mitose;Meiose;Clivagem;Gemulação;Fissão;B
+ciencias;dificil;pH ácido é caracterizado por valores:;Acima de 7;Iguais a 7;Abaixo de 7;Entre 5-6;Entre 8-9;C
+ciencias;dificil;Elemento químico com símbolo Na:;Níquel;Néon;Sódio;Enxofre;Nitrogênio;C
+ciencias;dificil;Lei que relaciona Pressão e Volume (temperatura constante):;Lei de Boyle;Lei de Charles;Lei de Gay-Lussac;Lei de Ohm;Lei de Coulomb;A
+ciencias;dificil;Doença causada por deficiência de vitamina C:;Raquitismo;Bócio;Escorbuto;Anemia;Beribéri;C
+
+matematica;extra_hard;Qual a derivada de e^x?;e^x;2e^x;xe^x;1;0;A
+portugues;extra_hard;Figura de linguagem em 'O coração tem razões que a própria razão desconhece';Metáfora;Metonímia;Ironia;Hipérbole;Antítese;A
+ciencias;extra_hard;Qual a fórmula da energia relativística?;E=mc²;F=ma;V=IR;P=VI;E=hf;A
